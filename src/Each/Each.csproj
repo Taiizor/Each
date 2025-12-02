@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AnalysisLevel>preview</AnalysisLevel>
+		<LangVersion>preview</LangVersion>
+		<Nullable>enable</Nullable>
+
+		<!-- Package Information -->
+		<PackageId>Each</PackageId>
+		<Version>0.0.3</Version>
+		<Authors>Taiizor</Authors>
+		<Company>Taiizor</Company>
+		<Product>Each</Product>
+		<Description>A comprehensive C# library providing strongly-typed value objects for common data types like Email, PhoneNumber, URL, CreditCard, IBAN, and more. Each type includes built-in validation, formatting, and parsing capabilities.</Description>
+		<PackageTags>types;value-objects;email;phone;validation;domain-driven-design;ddd;strongly-typed</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Taiizor/Each</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Taiizor/Each</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Documentation -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Each.xml</DocumentationFile>
+
+		<!-- Code Analysis -->
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
